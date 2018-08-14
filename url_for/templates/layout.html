@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css"  href = "{{url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1> It is Header </h1>
+<a href="{{ url_for('home') }}"> HOME PAGE </a>
+<a href="{{ url_for('second') }}">  SECOND PAGE </a>
+
+{% block body %}
+
+{% endblock%}
+
+<h2> It is footer </h2>
+
+</body>
+
+</html>
+
+
